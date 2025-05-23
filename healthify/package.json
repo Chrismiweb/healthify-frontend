@@ -1,5 +1,5 @@
 {
-  "name": "helthify",
+  "name": "healthify",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -37,14 +37,11 @@
     ]
   },
   "devDependencies": {
-    "@tailwindcss/cli": "^4.1.7",
+    "@tailwindcss/postcss": "^4.1.7",
     "autoprefixer": "^10.4.21",
     "postcss": "^8.5.3",
+    "postcss-import": "^16.1.0",
+    "postcss-loader": "^8.1.1",
     "tailwindcss": "^4.1.7"
-  },
-  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
-  "main": "index.js",
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  }
 }
