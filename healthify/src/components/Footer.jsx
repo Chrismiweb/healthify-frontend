@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Heart, Send, ChevronUp } from 'lucide-react';
+import { Heart, Send, ChevronUp,ArrowUp} from 'lucide-react';
 import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from 'react-icons/fa'; 
 
 const Footer = () => {
@@ -195,10 +195,10 @@ const Footer = () => {
       {/* Back to Top Button */}
       <button
         onClick={scrollToTop}
-        className="fixed bottom-8 right-8 w-12 h-12 bg-blue-500 hover:bg-blue-600 text-white rounded-full shadow-lg transition-all duration-300 transform hover:scale-110 z-50 flex items-center justify-center"
+        className="fixed bottom-8 right-8 w-12 h-12 bg-white hover:bg-blue-100 text-blue-600 rounded-full shadow-lg transition-all duration-300 transform hover:scale-110 z-50 flex items-center justify-center"
         title="Back to top"
       >
-        <ChevronUp className="w-6 h-6" />
+        <ArrowUp className="w-6 h-6" />
       </button>
 
       {/* Copyright */}
