@@ -1,25 +1,30 @@
 import logo from './logo.svg';
 import './App.css';
+import HeroSection from './components/HeroSection';
+import Footer from './components/Footer';
+import Quality from './components/Qaulity';
+import HealthInsuranceHero from './components/HealthInsurance';
+import EveryonesHealth from './components/EveryonesHealth';
+import TeleHealthFeatures from './components/TeleHealthFeatures';
+import DoctorSection from './components/DoctorSection';
+import ServicesSection from './components/HealthService';
+import TestimonialsSection from './components/TestimonialsSection';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <HeroSection />
+      <Quality />
+      <HealthInsuranceHero />
+      <TeleHealthFeatures />
+      <EveryonesHealth />
+      <ServicesSection />
+
+      <DoctorSection />
+      <TestimonialsSection />
+      <Footer />
     </div>
   );
-}
+};
 
 export default App;
