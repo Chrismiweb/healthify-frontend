@@ -17,13 +17,13 @@ const Header = () => {
       {/* Main Header */}
       <div className="flex justify-between items-center px-6 py-4 bg-transparent">
         <div className="flex items-center space-x-2">
-  <img src="/logo.png" alt="Healthify Logo" className="h-8 w-auto" />
-</div>
+          <img src="/logo.png" alt="Healthify Logo" className="h-8 w-auto" />
+        </div>
         
         {/* Desktop Navigation */}
         <nav className="hidden md:flex space-x-8 text-white">
-          <a href="#" className="hover:text-blue-300 transition-colors font-medium">SIGN UP</a>
-          <a href="#" className="hover:text-blue-300 transition-colors font-medium">LOGIN</a>
+          <a href="/signup" className="hover:text-blue-300 transition-colors font-medium">SIGN UP</a>
+          <a href="/login" className="hover:text-blue-300 transition-colors font-medium">LOGIN</a>
           <a href="#" className="hover:text-blue-300 transition-colors font-medium">FEATURES</a>
           <a href="#" className="hover:text-blue-300 transition-colors font-medium">BLOG</a>
           <a href="#" className="hover:text-blue-300 transition-colors font-medium">CONTACT</a>
@@ -44,14 +44,14 @@ const Header = () => {
       }`}>
         <nav className="px-6 py-4 space-y-4">
           <a 
-            href="#" 
+            href="/signup" 
             onClick={closeMenu}
             className="block text-gray-800 hover:text-purple-600 transition-colors font-medium py-2 border-b border-gray-200"
           >
             SIGN UP
           </a>
           <a 
-            href="#" 
+            href="/login" 
             onClick={closeMenu}
             className="block text-gray-800 hover:text-purple-600 transition-colors font-medium py-2 border-b border-gray-200"
           >
