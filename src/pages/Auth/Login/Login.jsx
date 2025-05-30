@@ -54,7 +54,7 @@ function Login() {
     };
 
     return (
-        <div className="auth-container">
+        <div className="auths-container ">
             <ToastContainer/>
             <form className="auth-form" onSubmit={handleSubmit}>
                 <h2 className="brand-name">HEALTHIFY</h2>

@@ -6,11 +6,11 @@
     align-items: center;
     font-family: 'Segoe UI', sans-serif;
 }
-.auth-container {
+.auths-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #f0f0f0;
+    background-color: #f0f0f0;
     height: 100vh;
     
 }
