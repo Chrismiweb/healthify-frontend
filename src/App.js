@@ -18,6 +18,8 @@ import Help from "./pages/Help/Help";
 import Settings from "./pages/Settings/Settings";
 import ChangePassword from "./pages/Auth/ChangePassword/ChangePassword";
 import Explore from "./pages/explore/Explore";
+import Homepage from "./components/Homepage";
+import DashboardTwo from "./pages/Dashboard/DashboardTwo";
 
 const App = () => {
   return (
@@ -34,7 +36,7 @@ const App = () => {
           <Route path="/ward" element={<Ward/>} />
           <Route path="/session" element={<Session/>} />
           <Route path="/jjj" element={<Jjj/>} />
-          <Route path="/dashboard" element={<DashboardLayout/>} />
+          {/* <Route path="/dashboard" element={<DashboardLayout/>} /> */}
           <Route path="/profile" element={<Profile/>} />
           <Route path="/nearest-hospitals" element={<NearestHospital/>} />
           <Route path="/wellness" element={<Wellness/>} />
@@ -42,6 +44,8 @@ const App = () => {
           <Route path="/Help" element={<Help/>} />
           <Route path="/Settings" element={<Settings/>} />
           <Route path="/Settings" element={<ChangePassword/>} />
+          <Route path="/dashboard" element={<DashboardTwo/>} />
+
 
 
 

@@ -512,7 +512,7 @@ const ChatInterface = ({ doctor, onClose }) => {
         sender: 'user',
         timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
       };
-
+      
       setMessages((prev) => [...prev, userMessage]);
       setMessage('');
       setIsTyping(true);
