@@ -60,7 +60,7 @@ function Profile() {
         </button>
       </div>
 
-      <main className="flex-1 lg:ml-0">
+      <main className="flex-1 ml-64 p-6">
         {/* Header */}
         <div className="bg-white shadow-sm border-b px-4 lg:px-8 py-4">
           <div className="flex items-center justify-between">

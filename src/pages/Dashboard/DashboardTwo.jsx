@@ -6,7 +6,7 @@ function DashboardTwo() {
   return (
     <div className='flex'>
         <Sidebar/>
-        <main className="flex-1 p-4">
+        <main className="flex-1 ml-64 p-6">
             <Homepage/>
         </main>
     </div>

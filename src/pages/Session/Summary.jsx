@@ -13,7 +13,7 @@ const Summary = () => {
   return (
     <div className='flex'>
         <Sidebar/>
-        <main className="flex-1 p-4">
+        <main className="flex-1 ml-64 p-6">
             <div className="w-[80%] mt-10 p-6 bg-[#F1F1F1] rounded shadow space-y-4">
                 <h2 className="text-xl font-bold">Session Summary</h2>
                 <p><strong>Doctor:</strong> {doctor}</p>

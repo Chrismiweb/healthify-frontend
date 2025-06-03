@@ -7,7 +7,7 @@ function Help() {
   return (
     <div className='flex'>
         <Sidebar/>
-        <main className="flex-1 p-4">
+        <main className="flex-1 ml-64 p-6">
           <div className="w-[85%] mx-auto mt-6 shadow-md">
             {/* Header */}
             <div className="bg-[#EBE9E9] p-3 font-semibold text-gray-700">Contact us</div>

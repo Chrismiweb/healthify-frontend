@@ -22,7 +22,7 @@ function Wellness() {
   return (
     <div className='flex'>
         <Sidebar/>
-        <main className="flex-1 p-4">
+        <main className="flex-1 ml-64 p-6">
             <section className="max-w-7xl mx-auto py-10 px-4">
                 <h2 className="text-3xl font-bold text-center mb-8">🌿 Wellness & Lifestyle</h2>
 

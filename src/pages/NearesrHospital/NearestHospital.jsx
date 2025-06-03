@@ -27,7 +27,7 @@ const hospitals = [
   return (
     <div className='flex'>
         <Sidebar/>
-        <main className="flex-1 p-4">
+        <main className="flex-1 ml-64 p-6">
             <div className="max-w-4xl mx-auto p-6 bg-gray-50 rounded shadow">
               <h2 className="text-2xl font-bold mb-4">🏥 Nearest Hospitals</h2>
               <ul className="space-y-4">

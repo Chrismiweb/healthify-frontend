@@ -5,7 +5,7 @@ const ConsultationPayment = () => {
   return (
     <div className='flex'>
         <Sidebar/>
-        <main className="flex-1 p-4">
+        <main className="flex-1 ml-64 p-6">
             <div className="flex flex-col md:flex-row min-h-screen bg-[#5b8cd9] text-gray-800 p-6 md:items-center md:justify-center">
       {/* Left Side */}
       <div className="space-y-6 mr-6">

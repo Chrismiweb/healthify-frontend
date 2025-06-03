@@ -11,7 +11,7 @@ function Subscription() {
   return (
     <div className='flex'>
         <Sidebar/>
-        <main className="flex-1 p-4">
+        <main className="flex-1 ml-64 p-6">
           <div className="min-h-screen bg-gray-50 p-6 flex justify-center items-start">
             <div className="bg-white shadow-lg rounded-lg p-6 w-full max-w-xl">
               <h2 className="text-2xl font-bold mb-4">📝 Manage Subscription</h2>

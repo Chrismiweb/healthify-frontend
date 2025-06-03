@@ -14,7 +14,7 @@ const Invoice = () => {
   return (
       <div className="flex">
         <Sidebar/>
-        <main className="flex-1 p-4"> 
+        <main className="flex-1 ml-64 p-6"> 
           <div className="border-2 rounded-md p-4 w-full max-w-4xl mt-[70px] mx-auto bg-[#F9F9F9] shadow">
             {/* Header */}
             <div className="flex justify-between bg-[#EBE9E9] px-[13px] py-[8px] items-center mb-4">

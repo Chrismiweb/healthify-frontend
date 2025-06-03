@@ -32,7 +32,9 @@ const Sidebar = () => {
   ];
 
   return (
-    <div className="w-64 h-screen bg-white border-r p-4 flex flex-col space-y-4">
+    // <div className="w-64 h-screen bg-white border-r p-4 flex flex-col space-y-4">
+    <div className="fixed top-0 left-0 w-64 h-screen bg-white border-r p-4 flex flex-col space-y-4 overflow-y-auto">
+
       {menuItems.map((item, index) => {
         const isActive = location.pathname === item.path;
 

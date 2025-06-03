@@ -27,7 +27,7 @@ const Session = () => {
   return (
      <div className='flex'>
         <Sidebar/>
-        <main className="flex-1 p-4">
+        <main className="flex-1 ml-64 p-6">
           <ToastContainer/>
           <div className="w-[80%] mx-auto mt-[38px] bg-gray-100 p-6 rounded shadow-md">
             {/* Dropdowns */}
