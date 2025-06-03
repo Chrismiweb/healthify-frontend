@@ -21,7 +21,7 @@ const Session = () => {
     navigate("/summary", {
       state: { institute, doctor, location, date, timeSlot }
     });
-    
+
   };
 
   return (
@@ -37,8 +37,10 @@ const Session = () => {
               onChange={(e) => setInstitute(e.target.value)}
             >
               <option value="">Select Institute</option>
-              <option value="institute1">Institute 1</option>
-              <option value="institute2">Institute 2</option>
+              <option value="University of Ilorin Teaching Hospital">University of Ilorin Teaching Hospital</option>
+              <option value="General Hospital Ilorin">General Hospital Ilorin</option>
+              <option value="Sobi Specialist Hospital">Sobi Specialist Hospital</option>
+              <option value="Kwara State Civil Service Hospital">Kwara State Civil Service Hospital</option>
             </select>
 
             <select
@@ -47,14 +49,14 @@ const Session = () => {
               onChange={(e) => setDoctor(e.target.value)}
             >
               <option value="">Select Doctor</option>
-              <option value="doctor1">Dr Chrismi</option>
-              <option value="doctor2">Dr Farouq</option>
-              <option value="doctor2">Dr. Miss Nike</option>
-              <option value="doctor2">Mr Khalil</option>
-              <option value="doctor2">Miss Muslimah</option>
-              <option value="doctor2">Dr AGM</option>
-              <option value="doctor2">Dr Kennedy</option>
-              <option value="doctor2">Miss Liya</option>
+              <option value="Dr Chrismi">Dr Chrismi</option>
+              <option value="Dr Farouq">Dr Farouq</option>
+              <option value="Dr. Miss Nike">Dr. Miss Nike</option>
+              <option value="Mr Khalil">Mr Khalil</option>
+              <option value="Miss Muslimah">Miss Muslimah</option>
+              <option value="Dr AGM">Dr AGM</option>
+              <option value="Dr Kennedy">Dr Kennedy</option>
+              <option value="Miss Liya">Miss Liya</option>
 
             </select>
 
@@ -64,8 +66,7 @@ const Session = () => {
               onChange={(e) => setLocation(e.target.value)}
             >
               <option value="">Select Location</option>
-              <option value="location1">Location 1</option>
-              <option value="location2">Location 2</option>
+              <option value="Kwara state, Ilorin">Kwara state, Ilorin</option>
             </select>
 
             {/* Date Picker */}
