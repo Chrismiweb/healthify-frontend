@@ -6,7 +6,7 @@ function Subscription() {
     plan: "Premium",
     status: "Active",
     renewalDate: "July 15, 2025",
-    amount: "$19.99/month",
+    amount: "N2000/month",
   };
   return (
     <div className='flex'>
