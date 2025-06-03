@@ -20,6 +20,8 @@ import ChangePassword from "./pages/Auth/ChangePassword/ChangePassword";
 import Explore from "./pages/explore/Explore";
 import Homepage from "./components/Homepage";
 import DashboardTwo from "./pages/Dashboard/DashboardTwo";
+import Summary from "./pages/Session/Summary";
+import ConsultationPayment from "./pages/Session/ConsultationPayment";
 
 const App = () => {
   return (
@@ -45,6 +47,10 @@ const App = () => {
           <Route path="/Settings" element={<Settings/>} />
           <Route path="/Settings" element={<ChangePassword/>} />
           <Route path="/dashboard" element={<DashboardTwo/>} />
+          <Route path="/summary" element={<Summary/>} />
+          <Route path="/consultationPayment" element={<ConsultationPayment/>} />
+
+
 
 
 

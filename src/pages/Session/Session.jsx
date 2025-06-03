@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import Sidebar from "../../components/Sidebar";
+import { useNavigate } from "react-router-dom";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Session = () => {
   const [institute, setInstitute] = useState("");
@@ -7,11 +10,25 @@ const Session = () => {
   const [location, setLocation] = useState("");
   const [date, setDate] = useState("");
   const [timeSlot, setTimeSlot] = useState("");
+  const navigate = useNavigate();
+
+   const handleNext = () => {
+    if (!institute || !doctor || !location || !date || !timeSlot) {
+      toast.error("Please fill all fields.");
+      return;
+    }
+
+    navigate("/summary", {
+      state: { institute, doctor, location, date, timeSlot }
+    });
+    
+  };
 
   return (
      <div className='flex'>
         <Sidebar/>
         <main className="flex-1 p-4">
+          <ToastContainer/>
           <div className="w-[80%] mx-auto mt-[38px] bg-gray-100 p-6 rounded shadow-md">
             {/* Dropdowns */}
             <select
@@ -30,8 +47,15 @@ const Session = () => {
               onChange={(e) => setDoctor(e.target.value)}
             >
               <option value="">Select Doctor</option>
-              <option value="doctor1">Doctor 1</option>
-              <option value="doctor2">Doctor 2</option>
+              <option value="doctor1">Dr Chrismi</option>
+              <option value="doctor2">Dr Farouq</option>
+              <option value="doctor2">Dr. Miss Nike</option>
+              <option value="doctor2">Mr Khalil</option>
+              <option value="doctor2">Miss Muslimah</option>
+              <option value="doctor2">Dr AGM</option>
+              <option value="doctor2">Dr Kennedy</option>
+              <option value="doctor2">Miss Liya</option>
+
             </select>
 
             <select
@@ -72,7 +96,7 @@ const Session = () => {
 
             {/* Next Button */}
             <div className="text-center">
-              <button className="px-6 py-2 border border-[#4369B2] rounded hover:bg-[#4369B2] hover:text-white font-semibold">
+              <button onClick={handleNext} className="px-6 py-2 border border-[#4369B2] rounded hover:bg-[#4369B2] hover:text-white font-semibold">
                 Next
               </button>
             </div>
