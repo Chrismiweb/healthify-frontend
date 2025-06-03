@@ -14,7 +14,7 @@ const ChangePassword = () => {
       alert("New and Confirm passwords do not match");
       return;
     }
-
+    
     // Simulate API call and success
     setTimeout(() => {
       setSuccess(true);
